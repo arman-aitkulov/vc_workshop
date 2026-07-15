@@ -50,8 +50,16 @@ text field stored alongside each row is enough for a 1-hour workshop.
 Do not attempt to wire up Supabase Auth (email/password, OAuth) unless
 they explicitly ask and understand it adds real setup time.
 
+## Git workflow
+Commit and push directly to the main/default branch. Do NOT create a
+separate branch or open a pull request — this is a solo 1-hour session,
+there's no one to review a PR, and the extra branch/merge step just
+costs time and adds a GitHub concept nobody needs to learn right now.
+
 ## Deploying
 This repo is meant to be viewed via GitHub Pages (Settings > Pages on
-GitHub — the participant does this manually, you can't do it for them).
-Once index.html is updated and pushed, tell them to open their Pages URL
-(https://<username>.github.io/<repo-name>/) to see it live.
+GitHub — the participant does this manually the first time, you can't
+do it for them). Once index.html is updated and pushed directly to
+main, tell them to open their Pages URL
+(https://<username>.github.io/<repo-name>/) to see it live — no PR or
+merge step needed, Pages picks up changes as soon as they land on main.
